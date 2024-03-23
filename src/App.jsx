@@ -1,9 +1,9 @@
 import { useState } from "react"
-import GameBoard from "./components/GameBoard.jsx"
-import Player from "./components/Player.jsx"
-import Logs from "./components/Logs.jsx"
+import GameBoard from "./components/GameBoard"
+import Player from "./components/Player"
+import Logs from "./components/Logs"
 import { WINNING_COMBINATIONS } from "./winner"
-import GameOver from "./components/GameOver.jsx"
+import GameOver from "./components/GameOver"
 
 const initialGameBoard = [
   [null, null, null],
