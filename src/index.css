@@ -7,9 +7,7 @@
 html {
   font-family: 'Roboto Slab', sans-serif;
   line-height: 1.5;
-
   color: #ebe7ef;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -349,3 +347,104 @@ ol {
     transform: scale(1);
   }
 }
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  header img {
+    width: 6rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #game-container {
+    max-width: 90%;
+    padding: 1rem;
+  }
+  
+  #players {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #players li {
+    width: 100%;
+  }
+  
+  #players button {
+    width: auto;
+  }
+  
+  .player-name, .player-symbol {
+    font-size: 0.8rem;
+  }
+  
+  #pre-game button {
+    font-size: 2rem;
+  }
+  
+  #game-board button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+  }
+  
+  #log {
+    max-width: 15rem;
+  }
+  
+  #log li {
+    margin: 0.5rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header img {
+    width: 7rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #game-container {
+    max-width: 70%;
+  }
+
+  #players button {
+    width: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .player-name,
+  .player-symbol {
+    font-size: 0.9rem;
+  }
+
+  #pre-game button {
+    font-size: 3rem;
+  }
+
+  #game-board button {
+    width: 7rem;
+    height: 7rem;
+    font-size: 4rem;
+  }
+
+  #log {
+    max-width: 18rem;
+  }
+
+  #log li {
+    margin: 0.6rem;
+  }
+}
+
